@@ -1,0 +1,4 @@
+you> What is your return policy?
+bot> <thinking> The user's question about the return policy is a platform question. According to the FAQ, the return policy is as follows: "You can return most items within 30 days of delivery as long as they’re unused and in original packaging (unless the item arrived defective)." </thinking>
+
+You can return most items within 30 days of delivery as long as they’re unused and in original packaging (unless the item arrived defective).

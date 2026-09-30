@@ -1,0 +1,16 @@
+{
+  "region": "us-east-1",
+  "stack_name": "bug-report-tool-stack",
+  "table_name": "bug-report-tool-stack-bug-reports",
+  "lambda_arn": "arn:aws:lambda:us-east-1:YOUR_AWS_ACCOUNT_ID:function:YOUR_LAMBDA_FUNCTION",
+  "gateway_name": "bug-report-tool-stack-gateway",
+  "gateway_id": "YOUR_GATEWAY_ID",
+  "gateway_arn": "arn:aws:bedrock-agentcore:us-east-1:YOUR_AWS_ACCOUNT_ID:gateway/YOUR_GATEWAY_ID",
+  "gateway_target_id": "YOUR_GATEWAY_TARGET_ID",
+  "gateway_target_name": "bugreports",
+  "harness_execution_role_arn": "arn:aws:iam::YOUR_AWS_ACCOUNT_ID:role/YOUR_HARNESS_ROLE",
+  "harness_name": "support_chatbot_clean",
+  "harness_id": "YOUR_HARNESS_ID",
+  "harness_arn": "arn:aws:bedrock-agentcore:us-east-1:YOUR_AWS_ACCOUNT_ID:harness/YOUR_HARNESS_ID",
+  "model_id": "us.amazon.nova-pro-v1:0"
+}

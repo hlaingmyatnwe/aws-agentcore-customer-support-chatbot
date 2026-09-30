@@ -1,0 +1,6 @@
+you> Do you offer gift wrapping?
+bot> <thinking> The FAQ does not contain information about gift wrapping services. Therefore, I cannot provide an answer based on the FAQ. I need to direct the user to the human support phone line for further assistance. </thinking>
+
+I'm sorry, but I couldn't find information about gift wrapping in our FAQ. For further assistance, please contact our human support team at the phone number provided on our website.
+
+you> 

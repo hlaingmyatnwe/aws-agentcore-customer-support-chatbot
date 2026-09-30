@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "id": "bug-report-test",
+      "prompt": "The checkout page crashes when I click the Pay button.",
+      "expected": "The assistant should recognize this as a bug report and ask for one missing required field, such as the steps to reproduce. It should not create a ticket yet because all required information has not been collected."
+    },
+    {
+      "id": "platform-question-test",
+      "prompt": "What is your return policy?",
+      "expected": "The assistant should answer from the FAQ that most items can be returned within 30 days of delivery if they are unused and in original packaging, unless the item arrived defective."
+    },
+    {
+      "id": "other-request-test",
+      "prompt": "Can you help me write a birthday message for my friend?",
+      "expected": "The assistant should not fulfill the unrelated request and should politely direct the customer to the human support phone line."
+    }
+  ]
+}

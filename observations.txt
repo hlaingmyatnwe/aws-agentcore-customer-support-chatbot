@@ -1,0 +1,13 @@
+Project Observations
+
+The customer support chatbot was implemented using Amazon Bedrock AgentCore with Amazon Nova Pro. The chatbot routes customer requests into three categories: bug reports, platform questions, and other requests.
+
+For bug reports, the chatbot collects three required fields: a description of the issue, the steps to reproduce it, and the user's environment. The chatbot asks for one missing field at a time and calls the bugreports___create_bug_report tool only after all required information has been provided. The created bug report is stored in Amazon DynamoDB and a ticket ID is returned to the customer.
+
+For platform questions, the chatbot answers only using information contained in the provided online shop FAQ. If the requested information is not covered by the FAQ, the chatbot does not invent an answer and instead directs the customer to human support. Requests outside the chatbot's intended scope are also redirected to human support.
+
+During testing, I observed that the AgentCore harness's managed memory could cause information from previous conversations to affect fresh test sessions. This caused a bug-report evaluation case to incorrectly reuse information from an earlier interaction and create a ticket before all required fields had been collected. To ensure that each evaluation case was independent, managed memory was disabled for the final harness.
+
+After disabling managed memory, the bug-report test correctly asked for the missing steps to reproduce instead of creating a ticket immediately. The covered FAQ question, uncovered platform question, and out-of-scope request also behaved as expected.
+
+The final Bedrock evaluation used the Builtin.Correctness metric with three test cases. The completed evaluation achieved a Correctness score of 1.0.

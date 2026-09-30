@@ -1,0 +1,6 @@
+you> Can you help me write a birthday message for my friend?
+bot> <thinking> This request is not a bug report, a platform question, or related to the online shop's services. Therefore, it falls under the category of OTHER REQUEST. According to the instructions, I should politely explain that I can assist with online-shop bug reports and questions covered by the shop FAQ, and direct the customer to the human support phone line. </thinking>
+
+I'm here to help with online-shop bug reports and questions covered by our FAQ. Writing a birthday message is outside my scope. For such requests, please contact our human support team directly using the phone line provided on our website. They'll be happy to assist you.
+
+you> 
